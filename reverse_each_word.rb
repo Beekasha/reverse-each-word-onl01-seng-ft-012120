@@ -5,6 +5,6 @@ def reverse_each_word(string)
   #words.each { |word| new_sentence.push(word.reverse)}
   #new_sentence.join(" ")
   
-  reversed = words.map { |word| word.reverse }
+  reversed = words.collect { |word| word.reverse }
   reversed.join(" ")
 end
